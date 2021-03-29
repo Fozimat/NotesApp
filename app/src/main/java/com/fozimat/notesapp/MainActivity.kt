@@ -61,7 +61,6 @@ class MainActivity : AppCompatActivity() {
                 val cursor = noteHelper.queryAll()
                 MappingHelper.mapCursorToArrayList(cursor)
             }
-            noteHelper.close()
             binding.progressbar.visibility = View.INVISIBLE
             val notes = deferredNotes.await()
             if (notes.size > 0) {
@@ -70,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                 adapter.listNotes = ArrayList()
                 showSnackbarMessage("Tidak ada data saat ini")
             }
+            noteHelper.close()
         }
     }
 
