@@ -1,4 +1,4 @@
-package com.fozimat.notesapp
+package com.fozimat.consumerapp
 
 import android.content.Intent
 import android.database.ContentObserver
@@ -8,11 +8,11 @@ import android.os.HandlerThread
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.fozimat.notesapp.adapter.NoteAdapter
-import com.fozimat.notesapp.databinding.ActivityMainBinding
-import com.fozimat.notesapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
-import com.fozimat.notesapp.entity.Note
-import com.fozimat.notesapp.helper.MappingHelper
+import com.fozimat.consumerapp.adapter.NoteAdapter
+import com.fozimat.consumerapp.databinding.ActivityMainBinding
+import com.fozimat.consumerapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
+import com.fozimat.consumerapp.entity.Note
+import com.fozimat.consumerapp.helper.MappingHelper
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = "Notes"
+        supportActionBar?.title = "Consumer Notes"
 
         binding.rvNotes.layoutManager = LinearLayoutManager(this)
         binding.rvNotes.setHasFixedSize(true)

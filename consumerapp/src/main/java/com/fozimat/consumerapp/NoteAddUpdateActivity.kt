@@ -1,4 +1,4 @@
-package com.fozimat.notesapp
+package com.fozimat.consumerapp
 
 import android.content.ContentValues
 import android.net.Uri
@@ -9,13 +9,13 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.fozimat.notesapp.databinding.ActivityNoteAddUpdateBinding
-import com.fozimat.notesapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
-import com.fozimat.notesapp.db.DatabaseContract.NoteColumns.Companion.DATE
-import com.fozimat.notesapp.db.DatabaseContract.NoteColumns.Companion.DESCRIPTION
-import com.fozimat.notesapp.db.DatabaseContract.NoteColumns.Companion.TITLE
-import com.fozimat.notesapp.entity.Note
-import com.fozimat.notesapp.helper.MappingHelper
+import com.fozimat.consumerapp.databinding.ActivityNoteAddUpdateBinding
+import com.fozimat.consumerapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
+import com.fozimat.consumerapp.db.DatabaseContract.NoteColumns.Companion.DATE
+import com.fozimat.consumerapp.db.DatabaseContract.NoteColumns.Companion.DESCRIPTION
+import com.fozimat.consumerapp.db.DatabaseContract.NoteColumns.Companion.TITLE
+import com.fozimat.consumerapp.entity.Note
+import com.fozimat.consumerapp.helper.MappingHelper
 import java.text.SimpleDateFormat
 import java.util.*
 

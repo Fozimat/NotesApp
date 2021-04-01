@@ -1,4 +1,4 @@
-package com.fozimat.notesapp
+package com.fozimat.consumerapp
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
